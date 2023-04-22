@@ -6,7 +6,7 @@ The initial stages of data exploration and preparation were carried out using a 
 
 
 **This repo include:**
-1. Jupyter notebook- All Answers apear in the jupyter notebook
+1. Cell_Classification_using_gene_Data.ipynb- All Answers apear in the jupyter notebook
 2. requetment.txt - this file contain all pachges and more that I use to. (I work with poetry and vs code)
 3. test_classifier.py - is the unitest file.
 

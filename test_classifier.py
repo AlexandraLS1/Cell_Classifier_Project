@@ -1,3 +1,5 @@
+
+
 import pytest
 import pandas as pd 
 from sklearn.datasets import make_classification
@@ -11,14 +13,15 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import GridSearchCV
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report
-# Define a fixture to generate synthetic data for testing
 @pytest.fixture
 
-# https://www.tutorialspoint.com/pytest/pytest_starting_with_basic_test.htm
+#  unit test, generat synthetic data and testing that the function/ part of code  get the expected values
+# run this code when we have any update of the function(any function can ve evaluates -  we need onlly make the correct tests)
 
 def data():
+    # Define a fixture to generate synthetic data for testing
+
     X, y = make_classification(n_samples=100, n_features=1500, n_classes=2, random_state=42)
     return train_test_split(X, y, test_size=0.2, random_state=42)
 
